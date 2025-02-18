@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dahil Etme</title>
+</head>
+<body>
+    
+    <p id="paragraf1"> Lorem ipsum dolor sit amet.</p>
+
+
+
+
+    
+    <!-- 
+    <script>
+        console.log("Melih Diler");
+    </script> 
+    -->
+    
+
+    <!-- Başka sayfada js yazıp onu çalıştırma. -->
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!--Head veya Body kısmına js çalıştırabilirsin. Bunun için de <script>...</script> ekleyerek arasına çalıştırma istediğin kodu yazabilirsin
+Fakat js kodları body kapanış etiketinden hemen önce yazılır. Sebebi: paragraf1 textini js kullanarak değiştir veya başka bir işlem yaptırmak 
+istediğimiz zaman işlem yapamaz. Derleyici yukarıdan aşağıya doğru okur. Eğer head kısmına js kodunu yazarsak daha paragraf1'i görmeden
+şu işlemi yap dersek hata alırız. O en sona js kodunu yazarız ki verdiğimiz kodları önceden okuyup tanımış olsun. Sonra onlarla ilgili
+işlem yaptırabilelim. Hatta ileride çok fazla kod yazacağımız için sayfa şişecek bu sebeple başka bir sayfada js kodlarımızı yazıp ardından
+onları body kapanış etiketi öncesinde çağırmalıyız. Onu da console kısmı olan scripti yorum satırı yaparak elde edebiliriz.-->
