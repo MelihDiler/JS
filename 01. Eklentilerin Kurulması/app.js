@@ -1,4 +1,4 @@
-//                                    ---------- EKLENTILERIN KURULMASI ----------
+///                                    ---------- EKLENTILERIN KURULMASI ----------
 
 // Normalde yorum satırı bu renktedir.
 // Better Comments eklentisi sayesindee // sonrasına koyduğumuz işaretler ile yorum satırının rengini değiştirebiliyoruz.
