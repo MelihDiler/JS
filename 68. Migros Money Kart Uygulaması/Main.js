@@ -50,9 +50,9 @@ if (sonuc) {                                                             //TODO 
     const musteri = new Musteri(isim, soyisim, sonuc, urunler);          //TODO  Musteri adındaki sınıf için nesne üretip değerleri yolladık. O da super ile miras aldığı MigrosBase'e yolladı. 
     odenecekTutar = musteri.hesapla();                                   //TODO  Yollanmış değerlerle Musteri sınıfının hesapla metodu çalıştırıldı. O da super ile MigrosBase'deki hesaplayı çalıştırıp return ile değeri döndürdü.
 
-    alert(
+    alert(                                                               //TODO  MigrosBase sınıfındaki özelliklere orada fonksiyon çalıştırarak ulaştık.
         `
-        Müşteri Bilgileri : ${musteri.getIsim()} ${musteri.getSoyisim()} //TODO  MigrosBase sınıfındaki özelliklere orada fonksiyon çalıştırarak ulaştık.
+        Müşteri Bilgileri : ${musteri.getIsim()} ${musteri.getSoyisim()} 
         Ödenecek Tutar : ${odenecekTutar}
         `);
 
