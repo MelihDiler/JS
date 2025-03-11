@@ -1,8 +1,8 @@
 //                         ---------- DIZI METOTLARI ----------
 
 
-let arabalar = ["bmw","toyota","renault","mercedes","porsche"];
-let motorlar = ["harley","ducati","kawasaki","yamaha"];
+let arabalar = ["bmw", "toyota", "renault", "mercedes", "porsche"];
+let motorlar = ["harley", "ducati", "kawasaki", "yamaha"];
 
 
 
@@ -50,7 +50,7 @@ console.log(silinenEleman);                      //!     Çıktı = "hyundai"
 //?     3. parametreye herhangi bir değer yazmazsak ekleme işlemi yapmaz.
 
 console.log(arabalar);                           //?     Çıktı = "bmw","toyota","renault","mercedes","porsche"
-silinenEleman = arabalar.splice(2,1,"dacia");    //?     2. indeksten başlar, 1 eleman siler, "dacia" değerini ekler. Silenen değeri döner.
+silinenEleman = arabalar.splice(2, 1, "dacia");    //?     2. indeksten başlar, 1 eleman siler, "dacia" değerini ekler. Silenen değeri döner.
 console.log(arabalar);                           //?     Çıktı = "bmw","toyota","dacia","mercedes","porsche"
 console.log(silinenEleman);
 
@@ -91,7 +91,7 @@ console.log(birlesmisDizi);                      //!     Çıktı = "bmw","toyot
 //?     ikinci parametre kaçıncı indeksine kadar değer alacağını belirler. İkinci parametreyi yazmazsan sonuna kadar alır.
 
 console.log(arabalar);                          //?     Çıktı = "bmw","toyota","dacia","mercedes","porsche"
-let ayriDizi = arabalar.slice(2,4);             //?     2. indeksten başlar 4. indekse kadar alıp ayriDizi adlı diziye kopyalar.
+let ayriDizi = arabalar.slice(2, 4);             //?     2. indeksten başlar 4. indekse kadar alıp ayriDizi adlı diziye kopyalar.
 console.log(ayriDizi);                          //?     Çıktı = "dacia","mercedes"
 
 
@@ -118,7 +118,7 @@ console.log(arabalar);                         //TODO  Çıktı = "porsche", "me
 //!     Elimizdeki string değer dizi olacak şekilde yazılmış ve belirli bir karakter ile bölünmüş ise bunu diziye sıkıntısız çevirir.
 
 let isimler = "Melih,Ezgi,Panduf , Defne"      //!     Dikkat edilmesi gereken yer = Aşağıda parametre olarak "," belirledik.
-                                               //!     Yaptığı işlem sadece virgüller arasındaki değerleri alıp diziye indekslere yerleştirmek.
+//!     Yaptığı işlem sadece virgüller arasındaki değerleri alıp diziye indekslere yerleştirmek.
 let isimlerDizi = isimler.split(",");          //!     Panduf'dan sonra boş krakteri, Defne'den önceki boş karakteri de alır. 
 console.log(isimlerDizi);                      //!     Çıktı = "Melih", "Ezgi", "Panduf ", " Defne"
 
@@ -130,7 +130,7 @@ console.log(isimlerDizi);                      //!     Çıktı = "Melih", "Ezgi
 
 console.log(arabalar);                         //!     Çıktı = "porsche", "mercedes", "dacia", "toyota", "bmw"
 
-let index = arabalar.indexOf("bmw");            
+let index = arabalar.indexOf("bmw");
 console.log(index);                            //!     Çıktı = 4
 
 
@@ -145,8 +145,15 @@ console.log(index);                            //!     Çıktı = 4
 let sonuc = arabalar.includes("porsche");
 console.log(sonuc);                            //*     Çıktı = true
 
-if(sonuc){
+if (sonuc) {
     console.log("Belirtilem eleman vardır...");//*     Çıktı = "Belirtilen eleman vardır..."
-}else{
+} else {
     console.log("Belirtilen eleman yoktur...");
 }
+
+//TODO                         ---------- FIND ----------
+
+//TODO  bir dizide belirli bir koşulu sağlayan ilk öğeyi bulmak için kullanılır. Bulduğu ilk öğeyi döndürür, eğer hiçbir öğe koşulu sağlamazsa undefined döner.
+
+const ogrenci = ogrenciler.find(ogrenci => ogrenci.id === 3);//TODO  Çikti: { id: 3, isim: "Veli" } ogrenciler dizisinin elemanlarini sirayla donup  ID'si 3 olanla ilk eşleşn elemanı döner.
+
