@@ -7,7 +7,7 @@
 let not1 = 60;
 let not2 = 70;
 
-console.log("Notlarınızın toplamı :" + (not1 + not2));  //?     Burada string ile toplama işleminin sonucunu string olarak toplamış oluruz.
+console.log("Notlarınızın toplamı :" + (not1 + not2));//?     Burada string ile toplama işleminin sonucunu string olarak toplamış oluruz.
 //?     Parantez içine almasaydık eğer String olarak hepsine işlem yapacaktı. Yani:
 //?     Notlarınızın toplamı : 6070 olarak çıktı vericekti. 
 //?----------------------------------------------------------------------------------------------------------------------------------------
@@ -25,13 +25,13 @@ console.log(sayi1 - sayi2);                           //*     Çıktı -10 olara
 let sayi3 = 5;
 let sayi4 = 10;
 
-console.log(sayi3 * sayi4);                         //TODO  Çıktı 50 olarak gelir.
+console.log(sayi3 * sayi4);                           //TODO  Çıktı 50 olarak gelir.
 //TODO-------------------------------------------------------------------------------------------------------------------------------------
 //!----------------------------------------------------------------------------------------------------------------------------------------
 //!                             / Operatörü
 //!----------------------------------------------------------------------------------------------------------------------------------------
 let sonuc = (not1 + not2) / 2;
-console.log(sonuc);                                 //!     Çıktı 65 olarak gelir. Burada yine parantez ile işlem önceliği sağladık.
+console.log(sonuc);                                   //!     Çıktı 65 olarak gelir. Burada yine parantez ile işlem önceliği sağladık.
 //!----------------------------------------------------------------------------------------------------------------------------------------
 //?----------------------------------------------------------------------------------------------------------------------------------------
 //?                             % Operatörü
@@ -45,7 +45,7 @@ let a = 10;
 a++;  //* 11
 a++;  //* 12
 a--;  //* 11
-console.log(a);                                     //*     Çıktı 11 olarak gelir.
+console.log(a);                                       //*     Çıktı 11 olarak gelir.
 //*----------------------------------------------------------------------------------------------------------------------------------------
 //TODO-------------------------------------------------------------------------------------------------------------------------------------
 //TODO                          ** Operatörü
