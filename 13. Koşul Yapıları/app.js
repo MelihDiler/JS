@@ -4,7 +4,7 @@ let not = 65;
 if (not > 50) {
     console.log("Geçtiniz, Notunuz: " + not);
 }
-else {                                                 //?  else kısmı olmadanda kod yazılabilir.
+else {                                                 //?  else kısmı olmadan da kod yazılabilir.
     console.log("Kaldınız, Not: " + not);
 }
 
@@ -37,7 +37,7 @@ let sonuc = (vize1 * 0.3) + (vize2 * 0.3) + (final * 0.4);
 if (sonuc >= 95 && sonuc <= 100) {                           // Burada sırayla kontrol sağlanır. If false ise bir alt şart sorgulanır,
     alert("AA :" + sonuc);                                   // o da false ise bir alt şart sorgulanır. Bu şekilde sırayla else ksımına
 }                                                            // kadar gider ve hiçbir şart sağlanmadıysa else çalışır. Sadece bir yer
-else if (sonuc >= 85 && sonuc < 95) {                         // çalışır.
+else if (sonuc >= 85 && sonuc < 95) {                        // çalışır.
     alert("BA :" + sonuc);
 }
 else if (sonuc >= 75 && sonuc < 85) {
@@ -76,7 +76,7 @@ let tckn = prompt("TCKN giriniz :");
 
 // kontrolEt(ad, tckn);
 
-function kontrolEt(ad, tckn){
+function kontrolEt(ad, tckn) {
     if (ad != "") {
         if (tckn.length == 11) {
             console.log("İsim ve tckn problemsiz girildi...");
@@ -94,12 +94,12 @@ function kontrolEt(ad, tckn){
 
 kontrolEt2(ad, tckn);
 
-function kontrolEt2(ad, tckn){
-    if(ad==""){
+function kontrolEt2(ad, tckn) {
+    if (ad == "") {
         console.log("Lütfen isim alanını boş bırakmayınız!!!");
         return;                                                        // Eğer if çalışırsa return sayesinde komple method'dan çıkar.
     }                                                                  // Bu sayede baştan başlarız.
-    if(tckn.length!=11){
+    if (tckn.length != 11) {
         console.log("Lütfen tc'nizi 11 karakter olarak giriniz...");
         return;                                                        // Eğer if çalışırsa return sayesinde komple method'dan çıkar.
     }                                                                  // Bu sayede baştan başlarız.
