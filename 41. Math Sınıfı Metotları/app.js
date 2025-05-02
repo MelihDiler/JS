@@ -2,8 +2,6 @@
 //                               -------------------------------------------
 
 
-
-
 //?                                      ---------- FLOOR ----------
 
 //?     Ondalıklı sayının "."dan sonrasını atar. Sayıyı zemine yuvarlar.
@@ -43,7 +41,7 @@ console.log(Math.round(g));                     //TODO  Çıktı = -6
 
 //!     Verdiğimiz dizideki en büyük değer döner.
 
-console.log(Math.max(c,d,e,f,g));               //!     Çıktı = 5.51
+console.log(Math.max(c, d, e, f, g));               //!     Çıktı = 5.51
 
 
 
@@ -51,7 +49,7 @@ console.log(Math.max(c,d,e,f,g));               //!     Çıktı = 5.51
 
 //?     Verdiğimiz dizideki en küçük değer döner.
 
-console.log(Math.min(c,d,e,f,g));               //?     Çıktı = -5.51
+console.log(Math.min(c, d, e, f, g));               //?     Çıktı = -5.51
 
 
 
@@ -75,7 +73,7 @@ console.log(Math.sqrt(16));                    //TODO  Çıktı = 4
 
 //!     Üssünü alma işlemi yapar. İlk parmetredeki değerin ikinci parametredeki kuvvetini geri verir.
 
-console.log(Math.pow(2,4));                    //!     Çıktı = 16    --> 2*2*2*2 = 2 üzeri 4
+console.log(Math.pow(2, 4));                    //!     Çıktı = 16    --> 2*2*2*2 = 2 üzeri 4
 
 
 
@@ -91,4 +89,4 @@ console.log(Math.PI);                          //?     Çıktı = 3.141592653589
 
 //*     Rastgele bir sayı üretmemizi sağlar. Rastgel 0 ile 1 arasında bir değer döner. Bu sebeple 100 ile çarpabiliriz.
 
-console.log(Math.floor(Math.random()*100));    //*     Çıktı  = Her zaman 0 ile 100 arasında değişir.
+console.log(Math.floor(Math.random() * 100));    //*     Çıktı  = Her zaman 0 ile 100 arasında değişir.

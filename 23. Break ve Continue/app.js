@@ -30,7 +30,7 @@ while (sayac1 <= 10) {
         break;
     }
     if (sayac1 == 8) {
-        continue;                          //?  Bu satırdan itibaren while döngü sonuna kadar çlıştırma demek. Bir sonraki döngüde şart
+        continue;                          //?  Bu satırdan itibaren while döngü sonuna kadar çalıştırma demek. Bir sonraki döngüde şart
     }                                      //?  sağlamayacağı için continue sonrasındaki kodlar çalışır.
     console.log(sayac1);
 

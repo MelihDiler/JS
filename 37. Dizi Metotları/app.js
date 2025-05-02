@@ -8,26 +8,26 @@ let motorlar = ["harley", "ducati", "kawasaki", "yamaha"];
 
 //?                          ---------- PUSH METODU ----------
 
-//?     Dizinin sonuna değer ekler. = ile bir değişkene atama yaparsan dizinin son uzunluğunu döner.
+//?     Dizinin sonuna değer ekler. "=" ile bir değişkene atama yaparsan dizinin son uzunluğunu döner.
 
-console.log(arabalar.length);                  //?     Çıktı = 5
-let diziUzunluk = arabalar.push("opel");       //?     arabalar.push("opel");  ile sadece dizinin sonuna değer ekleyip bırakabilirdik.
-console.log(diziUzunluk);                      //?     Çıktı = 6
+console.log(arabalar.length);                    //?     Çıktı = 5
+let diziUzunluk = arabalar.push("opel");         //?     arabalar.push("opel");  ile sadece dizinin sonuna değer ekleyip bırakabilirdik.
+console.log(diziUzunluk);                        //?     Çıktı = 6
 
 
 
 //*                       ---------- UNSHIFT METODU ----------
 
-//*     Dizinin başına değer ekler. = ile bir değişkene atama yaparsan dizinin son uzunluğunu döner.
+//*     Dizinin başına değer ekler. "=" ile bir değişkene atama yaparsan dizinin son uzunluğunu döner.
 
-diziUzunluk = arabalar.unshift("hyundai");     //*     "hyundai","bmw","toyota","renault","mercedes","porsche","opel"   olur.
-console.log(diziUzunluk);                      //*     Çıktı = 7
+diziUzunluk = arabalar.unshift("hyundai");       //*     "hyundai","bmw","toyota","renault","mercedes","porsche","opel"   olur.
+console.log(diziUzunluk);                        //*     Çıktı = 7
 
 
 
 //TODO                       ---------- POP METODU ----------
 
-//TODO  Dizinin sonundaki değeri siler. = ile bir değişkene atama yaparsan silinen elamanı döner.
+//TODO  Dizinin sonundaki değeri siler. "=" ile bir değişkene atama yaparsan silinen elamanı döner.
 
 silinenEleman = arabalar.pop();
 console.log(silinenEleman);                      //TODO  Çıktı = "opel"
@@ -36,7 +36,7 @@ console.log(silinenEleman);                      //TODO  Çıktı = "opel"
 
 //!                         ---------- SHIFT METODU ----------
 
-//!     Dizinin başındaki değeri siler. = ile bir değişkene atama yaparsan silinen elamanı döner.
+//!     Dizinin başındaki değeri siler. "=" ile bir değişkene atama yaparsan silinen elamanı döner.
 
 silinenEleman = arabalar.shift();
 console.log(silinenEleman);                      //!     Çıktı = "hyundai"
@@ -50,7 +50,7 @@ console.log(silinenEleman);                      //!     Çıktı = "hyundai"
 //?     3. parametreye herhangi bir değer yazmazsak ekleme işlemi yapmaz.
 
 console.log(arabalar);                           //?     Çıktı = "bmw","toyota","renault","mercedes","porsche"
-silinenEleman = arabalar.splice(2, 1, "dacia");    //?     2. indeksten başlar, 1 eleman siler, "dacia" değerini ekler. Silenen değeri döner.
+silinenEleman = arabalar.splice(2, 1, "dacia");  //?     2. indeksten başlar, 1 eleman siler, "dacia" değerini ekler. Silenen değeri döner.
 console.log(arabalar);                           //?     Çıktı = "bmw","toyota","dacia","mercedes","porsche"
 console.log(silinenEleman);
 
@@ -69,7 +69,7 @@ console.log(typeof arabalar);                    //*     Çıktı = object
 
 //TODO                      ---------- JOIN METODU ----------
 
-//TODO  toString'den tek farkı parametrelerde belirleyeceğin işaretle ile değerleri ayırıp yine string olarak geri döner. 
+//TODO  toString'den tek farkı parametrelerde belirleyeceğin işaretle değerleri ayırıp yine string olarak geri döner. 
 //TODO  toStirng "," ile ayırır.
 
 let join = arabalar.join("-");
@@ -91,14 +91,14 @@ console.log(birlesmisDizi);                      //!     Çıktı = "bmw","toyot
 //?     ikinci parametre kaçıncı indeksine kadar değer alacağını belirler. İkinci parametreyi yazmazsan sonuna kadar alır.
 
 console.log(arabalar);                          //?     Çıktı = "bmw","toyota","dacia","mercedes","porsche"
-let ayriDizi = arabalar.slice(2, 4);             //?     2. indeksten başlar 4. indekse kadar alıp ayriDizi adlı diziye kopyalar.
+let ayriDizi = arabalar.slice(2, 4);            //?     2. indeksten başlar 4. indekse kadar alıp ayriDizi adlı diziye kopyalar.
 console.log(ayriDizi);                          //?     Çıktı = "dacia","mercedes"
 
 
 
-//*                       ---------- TOSTRING OZELLIGI ----------
+//*                       ---------- LENGTH OZELLIGI ----------
 
-//*     Bu metot değil özelliktir. Bize dizininuzunluğunu verir.
+//*     Bu metot değil özelliktir. Bize dizinin uzunluğunu verir.
 
 console.log(arabalar.length);                   //*     Çıktı = 5
 

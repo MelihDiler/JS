@@ -16,7 +16,7 @@ switch (sayi) {
     //*  Burada break anahtar kelimesini kaldırdık.            
     case 4:                                       //*  Çıktı olarak sırayla "Girilen sayı 3" ve "Girilen sayi 4" olarak verdi. 
         console.log("Girilen sayı 4'dür.");       //*  Yani break yoksa caseleri taramaya devam eder ve ilk break ile çıkar. 
-        break;                                    //*  Eğer ki case 4'deki break kaldırılısa bu sefer 3 ve 4'ten sonra
+        break;                                    //*  Eğer ki case 4'deki break kaldırılırsa bu sefer 3 ve 4'ten sonra
     case 5:                                       //*  "Girilen sayı 5" çıktı olarak verir.
         console.log("Girilen sayı 5'dir.");
         break;

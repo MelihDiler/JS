@@ -43,8 +43,8 @@ let sayac4 = 1;
 
 while (true) {
     console.log(sayac4);
-    if(sayac4 ==7){
+    if (sayac4 == 7) {
         break;
     }
-    sayac4 ++;
+    sayac4++;
 }

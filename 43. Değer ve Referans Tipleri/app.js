@@ -1,4 +1,4 @@
-/*                                   ---------- DEGER VE REFERANS TIPLERI ----------
+/*                                   ---------- DEGER VE REFERANS TIPLERI ---------- 
 
 
 string, numbers, booleans, undefined, null, symbol    --> DEĞER TİPLİ - Primitive Data Types (İlkel Veri Tipleri)
@@ -14,7 +14,7 @@ Referans tipler ise değerlerinin eşitliklerine değil baktıkları yerlerin ay
 //?                                          ---------- DEĞER TİPİ ----------
 //?                                          --------------------------------                                
 
-let a = 5;                                            
+let a = 5;
 let b = 5;
 let c = a;
 
@@ -35,8 +35,8 @@ if (a == c) {
 //*                                         ---------- REFERANS TİPİ ----------
 //*                                         -----------------------------------    
 
-let dizi1 = [1,2,3];
-let dizi2 = [1,2,3];
+let dizi1 = [1, 2, 3];
+let dizi2 = [1, 2, 3];
 let dizi3 = dizi1;
 
 if (dizi1 == dizi2) {
@@ -54,7 +54,7 @@ if (dizi1 == dizi3) {
 //TODO  ÖNEMLİ :
 //TODO----------
 
-let dizi4 = [1,2,3];
+let dizi4 = [1, 2, 3];
 let dizi5 = dizi4;
 
 dizi5.push(12);

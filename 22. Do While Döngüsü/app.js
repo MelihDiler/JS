@@ -17,7 +17,7 @@ let yas = 23;
 
 do {
     console.log("Ehliyetinizi alabilirsiniz");
-} while (yas>= 25);
+} while (yas >= 25);
 
 //TODO 1'den 20'ye kadar olan tek sayıların toplamı :
 //TODO-----------------------------------------------
@@ -26,9 +26,9 @@ let sayi = 0;
 let sonuc = 0;
 
 do {
-    if(sayi % 2 == 1){
-        sonuc +=sayi;
+    if (sayi % 2 == 1) {
+        sonuc += sayi;
     }
     sayi++;
-} while (sayi <=20);
+} while (sayi <= 20);
 console.log("Toplam : " + sonuc);

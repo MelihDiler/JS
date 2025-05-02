@@ -11,7 +11,7 @@ let bosluklu = "   Melih Diler      ";
 
 //?     Verilen indeks numarasındaki karakteri döndürür.
 
-let karakter = kurs.charAt(5);     
+let karakter = kurs.charAt(5);
 console.log(karakter);
 
 
@@ -20,7 +20,7 @@ console.log(karakter);
 
 //*     İki ve daha fazla farklı stringi birleştirip kopyasını geri döndürür.
 
-let sonuc = kurs.concat(" ",tarih," ", isim);
+let sonuc = kurs.concat(" ", tarih, " ", isim);
 console.log(sonuc);
 
 
@@ -29,7 +29,7 @@ console.log(sonuc);
 
 //TODO  Belirtilen öğenin dizide ya da string içinde ilk bulunduğu konumu döner. Eğer öğe bulunamazsa -1 döner.
 
-let index = kurs.indexOf("e");                           
+let index = kurs.indexOf("e");
 console.log(index);                                      //TODO  Çıktı = 3
 
 
@@ -70,9 +70,9 @@ console.log(bosluklu.trim());
 //TODO  ikinci parametre bitiş indeksi(hariç). Ayrıca negatif indexleri kabul eder. Yani saymaya sondan başlar. Başlangıç değeri bitiş
 //TODO  değerinden büyük ise boş string değeri döndürür.
 
-console.log(kurs.slice(7,10));                          //TODO  Çıktı = WEB
-console.log(kurs.slice(-6,-2));                         //TODO  Çıktı = " Kur"
-console.log(kurs.slice(10,7));                          //TODO  Çıktı = ""
+console.log(kurs.slice(7, 10));                          //TODO  Çıktı = WEB
+console.log(kurs.slice(-6, -2));                         //TODO  Çıktı = " Kur"
+console.log(kurs.slice(10, 7));                          //TODO  Çıktı = ""
 
 
 
@@ -81,9 +81,9 @@ console.log(kurs.slice(10,7));                          //TODO  Çıktı = ""
 //!     Slice'ın benzeridir. Farkları negatif index kabul etmez negatif değeri "0" olarak kabul eder. Başlangıç değeri bitişten büyük
 //!     ise ikisini yer değiştirerek işlem yapar. 
 
-console.log(kurs.substring(7,13));                      //!     Çıktı = "Web Ge"   slice metodun aynısı
-console.log(kurs.substring(-6,2));                      //!     Çıktı = "Mo"
-console.log(kurs.substring(13,7));                      //!     Çıktı = "Web Ge"   13 ile 7 indeksini yer değiştirerek verdi.
+console.log(kurs.substring(7, 13));                      //!     Çıktı = "Web Ge"   slice metodun aynısı
+console.log(kurs.substring(-6, 2));                      //!     Çıktı = "Mo"
+console.log(kurs.substring(13, 7));                      //!     Çıktı = "Web Ge"   13 ile 7 indeksini yer değiştirerek verdi.
 
 
 
@@ -124,7 +124,7 @@ console.log(kurs.startsWith("web", 7));                 //!     Çıktı = false
 
 
 
-//?                                        ---------- ENDSWITH ----------
+//?                                        ---------- ENDSWITH ---------- 
 
 //?     Benim metnim sana verdiğim değerle mi bitiyor?
 
