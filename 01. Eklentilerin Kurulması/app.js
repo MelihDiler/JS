@@ -3,8 +3,8 @@
 // Normalde yorum satırı bu renktedir.
 // Better Comments eklentisi sayesindee // sonrasına koyduğumuz işaretler ile yorum satırının rengini değiştirebiliyoruz.
 
-// * 
-// ? 
+// *
+// ?
 // !            BURAYI KONTROL ETMEYİ UNUTMAYIN !       (CİDDİ UYARI)
 // TODO         BURAYA IF KOŞULU EKLEMEYİ UNUTMAYIN     (YAPILACAKLAR)
 
