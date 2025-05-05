@@ -11,7 +11,7 @@ WİNDOW ➝ DOCUMENT ➝ HTML ⮫   HEAD ➝  TITLE ➝ MYTITLE
 
 Ulaşım sıralaması bu şekilde anne çocuk ve kardeş şeklinde bağlantılarla gerçkleşir.
 
-*/ 
+*/
 
 
 let value;
@@ -23,7 +23,7 @@ value = document.characterSet;       //?  Çıktı = UTF-8     --> Bu bizim inde
 value = document.title;              //?  Çıktı = DOM Document Object Model    --> Bu bizim index.html'deki title'dan geliyor.
 value = document.location.protocol;  //?  Çıktı = http:
 value = document.location.host;      //?  Çıktı = 127.0.0.1:5500
-value = document.links;              //?  Çıktı = Ön yüz yazılmış olsaydı sıra sıra linkler gelecekti. <a> içine yazılanlar. Eğer belirli bir butonu getirmek istiyorsan yanına .item[4] yazarak 4. indeksteki butonun kodunu getirtebilisin.
+value = document.links;              //?  Çıktı = Ön yüz yazılmış olsaydı sıra sıra linkler gelecekti. <a> içine yazılanlar. Eğer belirli bir butonu getirmek istiyorsan yanına .item[4] yazarak 4. indeksteki butonun kodunu getirtebilirsin.
 //value = document.forms.item(1).id; //?  Çıktı = Ön yüz yazılmış olsaydı 1. indeksteki formun id'sini getirecektir. Form olmadığı için yorum satırı yapıldı.
 
 

@@ -1,4 +1,4 @@
-//                        ---------- STYLE OZELLIGI KULLANIMI ----------
+//                         ---------- STYLE OZELLIGI KULLANIMI ----------
 
 const todo = document.querySelectorAll(".list-group-item")[0];
 
