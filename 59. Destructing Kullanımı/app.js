@@ -40,9 +40,9 @@ console.log(dil1, dil2, dil3, dil4);                    //*     Çıktı = C# C+
 
 // let diller = ["C#", "C++", "JavaScript", "Python"];
 // let dil1, dil2, dil3, dil4;
-// [dil1, dil2, dil3, dil4] = diller,
+// [dil1, dil2, dil3, dil4] = diller;
 
-// console.log(dil1, dil2, dil3, dil4);                 //TODO  Çıktı = C# C++ JavaScript Python
+// console.log(dil1, dil2, dil3, dil4);                    //TODO  Çıktı = C# C++ JavaScript Python
 
 //TODO-----------------------------------------------------------------------------------------------------------------------------------
 //!--------------------------------------------------------------------------------------------------------------------------------------
@@ -89,7 +89,7 @@ const person = {
 // console.log(isim, soyisim, maas, yas);
 //?--------------------------------------------------------------------------------------------------------------------------------------
 
-let {firstName, lastName, salary, age} = person         //?     Diziler [] ile tanımlandığı için []'le, nesneler {} ile tanımlandığı 
+let { firstName, lastName, salary, age } = person         //?     Diziler [] ile tanımlandığı için []'le, nesneler {} ile tanımlandığı 
 //?     için {}'le yaptık. Ayrıca nesne içindekilerle aynı isimde yapmak zorundayız. Çünkü farklı isim verirsek, anahtar değer olarak 
 //?     nesne tanımlandığı için neyi nereye atacağına yani maplemeyi başaramıyor. Eğerki nesne isimleriyle değilde başka bir değişkenle
 //?     kullanmak istersek:
@@ -98,7 +98,7 @@ let {firstName, lastName, salary, age} = person         //?     Diziler [] ile t
 //?     Ayrıca şu kodu hata olarak gösterir:
 // let firstName, lastName, salary, age
 // {firstName, lastName, salary, age} = person
-//?     Çünkü süslü parantezi block olarak algılıyor ve syntax htası veriyor bu sebeple yukarıdaki gibi ya direkt let ile oluşturup 
+//?     Çünkü süslü parantezi block olarak algılıyor ve syntax hatası veriyor bu sebeple yukarıdaki gibi ya direkt let ile oluşturup 
 //?     vericez ya bu kodu parantez içine alarak block olaark algılamasını önleyeceğiz.
 
 console.log(firstName, lastName, salary, age);

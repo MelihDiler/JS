@@ -1,6 +1,6 @@
 //                                       ---------- MAP KULLANIMI ----------
 
-//      İstediğintürde anahtar ve değer tanımlayabilirsin. Object gibi string olmaz. Neyse onu saklar.
+//      İstediğin türde anahtar ve değer tanımlayabilirsin. Object gibi string olmaz. Neyse onu saklar.
 // map1.set(1, "Melih")
 // map1.set(true, 5)
 // map1.set([1, 2, 3], { firstName: "Melih", lastName: "Diler" })                  //      Eğer ki arrayi ve object'i bir anahtar olarak kullanmak istersen bu şekilde yaptığında undefined döndürür. Çünkü referans tiplidir ve ramde aynı yere bakmazlar. O yüzden arrayi bir değişkene atayıp onu buraya yazmalısın.
@@ -54,7 +54,7 @@ console.log(map1.has(55));                                                      
 
 //?--------------------------------------------------------------------------------------------------------------------------------------
 //*--------------------------------------------------------------------------------------------------------------------------------------
-//*                                      ---------- UZERINDE DONMEK ----------
+//*                                 ---------- UZERINDE FOR OF ILE DONMEK ----------
 //*--------------------------------------------------------------------------------------------------------------------------------------
 
 for (let [key, value] of map1) {                                                   //*     Burada Destructing kullandık map1 içindeki her alan key ve value olarak oluşur. Bizde onları key value adındaki değişkenlere sırayla ata dedik. for (let (value) of map1) yapsaydık ve console.log(value); deseydik key ve value değerini bir dizi olarak atayacaktı
@@ -71,7 +71,7 @@ for (let [key, value] of map1) {                                                
 const keys = Array.from(map1.keys());                                              //TODO  Array'e çevirip keys değişkenine array olarak atadık.
 console.log(keys);                                                                 //TODO  Çıktı = [35, 6, 1]     Bu bir Arraydir.
 
-keys.forEach((key) => {
+keys.forEach(key => {
     console.log(key, map1.get(key));                                               //TODO  , map1.get(key) eklersen value değeri de gelmiş olur.
 })
 
@@ -105,7 +105,7 @@ const array2 = [
 
 const myMap = new Map(array2);
 console.log(myMap);                                                                //?     Çıktı = {34 => 'İstanbul', 35 => 'İzmir', 6 => 'Ankara', 1 => 'Adana'}
- 
+
 //?--------------------------------------------------------------------------------------------------------------------------------------
 //*--------------------------------------------------------------------------------------------------------------------------------------
 //*                                      ----------  ----------

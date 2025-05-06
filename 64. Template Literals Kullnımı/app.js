@@ -17,24 +17,24 @@
 //*                            ---------- YENI YONTEM ----------
 //*--------------------------------------------------------------------------------------------------------------------------------------
 
-function write(firstName, lastName) {
-    console.log(`İsim: ${firstName} Soyisim: ${lastName}`);                        //*     Çıktı = İsim: Melih Soyisim: Diler
-}
+// function write(firstName, lastName) {
+//     console.log(`İsim: ${firstName} Soyisim: ${lastName}`);                        //*     Çıktı = İsim: Melih Soyisim: Diler
+// }
 
-write("Melih", "Diler");
+// write("Melih", "Diler");
 
 //*--------------------------------------------------------------------------------------------------------------------------------------
 //TODO-----------------------------------------------------------------------------------------------------------------------------------
 //TODO                         ---------- ALT ALTA YAZMA ----------
 //TODO-----------------------------------------------------------------------------------------------------------------------------------
 
-function write2(firstName2, lastName2) {                                           //*     Basmış olduğun enter karakterini ve diğer her şeyi algılar. ` ` = arasında ne varsa onu verir. 
-    console.log(    
+function write2(firstName2, lastName2) {                                           //*     Basmış olduğun enter karakterini ve diğer her şeyi algılar. ` ` = arasında ne varsa onu verir.
+    console.log(
         `
-        İsim: ${firstName2}                                                        
-        Soyisim: ${lastName2}`);                                                   //*     Çıktı = 
-}                                                                                  //*            İsim: Melih 
-                                                                                   //*            Soyisim: Diler            
+        İsim: ${firstName2}
+        Soyisim: ${lastName2}`);                                                   //*     Çıktı =
+}                                                                                  //*            İsim: Melih
+//*            Soyisim: Diler
 write2("Melih", "Diler");
 
 //TODO-----------------------------------------------------------------------------------------------------------------------------------

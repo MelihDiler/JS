@@ -28,7 +28,7 @@ const diller1 = ["Java", "C#"];
 const diller2 = ["Php", "Python"];
 const diller3 = ["HTML", "CSS", ...diller1, ...diller2];                  //*     Aslında şudur: ["HTML", "CSS", diller1[0], diller1[1], diller2[0],diller2[1]];
 
-// const dillerYeni = diller1 + diller2;                                  //*     Çıktı = Java,C#Php,Pyton                  Dikkat edilirse aralarında "," yok.
+// const dillerYeni = diller1 + diller2;                                  //*     Çıktı = Java,C#,Php,Pyton                 Dikkat edilirse aralarında "," yok.
 // const dillerYeni = diller1.concat(diller2);                            //*     Çıktı = ['Java', 'C#', 'Php', 'Python']   Burada iki diziyi birleştirip yeni bir değişkende döndürmüştür. Eskiler hala orijinal haliyle durur.
 const dillerYeni = [diller1, ...diller2]                                  //*     Çıktı = [Array(2), 'Php', 'Python']       Dikkat edilirse  ilkini kapalı bir dizi, ikincisi açık bir dizi olarak vermiş.
 console.log(dillerYeni);
@@ -39,13 +39,13 @@ console.log(diller3);                                                     //*   
 //TODO                                     ---------- ORNEK 3 ----------
 //TODO-----------------------------------------------------------------------------------------------------------------------------------
 
-const sayilar = [1,2,3,4,5,6,7,8,9,10];                                   //TODO  Klasik bir dizi tanımladık.
+const sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];                          //TODO  Klasik bir dizi tanımladık.
 
-let [a,b] = sayilar;                                                      //TODO  Destructing ile ilk indeksi a'ya ikinci indeksi b'ye tanımladık.
-console.log(a,b);                                                         //TODO  Çıktı = 1 2
+let [a, b] = sayilar;                                                     //TODO  Destructing ile ilk indeksi a'ya ikinci indeksi b'ye tanımladık.
+console.log(a, b);                                                        //TODO  Çıktı = 1 2
 
-let [x,y,...kalanSayilar] = sayilar;
-console.log(x,y,kalanSayilar);                                            //TODO  Çıktı = 1 2 (8) [3, 4, 5, 6, 7, 8, 9, 10]
+let [x, y, ...kalanSayilar] = sayilar;
+console.log(x, y, kalanSayilar);                                          //TODO  Çıktı = 1 2 (8) [3, 4, 5, 6, 7, 8, 9, 10]
 
 
 //TODO-----------------------------------------------------------------------------------------------------------------------------------

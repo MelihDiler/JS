@@ -18,7 +18,7 @@ for (let name in names) {                             //?     let ile değişken
 //*                                        ---------- FOR OF ----------
 //*--------------------------------------------------------------------------------------------------------------------------------------
 
-//*     For of döngüsü dizide döndüğü her elemanın değerini verir.
+//*     For of döngüsü dizide döndüğü her elemanın değerini verir. 
 
 for (let isim of names) {                             //*     let ile değişken tanımlarız, of ile döneceği değişkeni yazarız.
     console.log(isim);                                //*     Çıktı = MELİH / EZGİ / PANDUF / DEFNE 
