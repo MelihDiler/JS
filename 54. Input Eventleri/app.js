@@ -1,11 +1,11 @@
-//                             ---------- KLAVYE EVENTLERİ ----------
+//                             ---------- INPUT EVENTLERİ ----------
 
 
 
 //?--------------------------------------------------------------------------------------------------------------------------------------------
 //?                                            focus                 
 //?--------------------------------------------------------------------------------------------------------------------------------------------
- 
+
 //?     Bir inputun içerisine girdiğizde odaklandığınızda çalışır. Search kısmına tıkladığınızda, form doldurmak için isim bölümüne 
 //?     tıkladığınızda vb.
 
@@ -14,7 +14,7 @@ const todo = document.querySelector("#todoName");                               
 
 todo.addEventListener("focus", run);
 
-function run(e){
+function run(e) {
     console.log(e.type);                                                            //?     Çıktı = focus
 }
 
@@ -27,7 +27,7 @@ function run(e){
 
 todo.addEventListener("blur", run2);                                                //?     todo =  Todo Giriniz yazan input alanı
 
-function run2(e){
+function run2(e) {
     console.log(e.type);                                                            //?     Çıktı = blur
 }
 
@@ -42,8 +42,8 @@ function run2(e){
 
 todo.addEventListener("copy", run3);
 
-function run3(e){
-    console.log(e.target.value);                                                    //?     Çıktı = input içinde ne yazıyorsa.
+function run3(e) {
+    console.log(e.target.value);                                                    //?     Çıktı = input içinde ne yazıyorsa. Alternatif olarak = console/log(todo.value); Cunku e ile olay nesnesini aldik.
 }
 
 //TODO-----------------------------------------------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ function run3(e){
 
 todo.addEventListener("paste", run4);
 
-function run4(e){
+function run4(e) {
     setTimeout(() => {                                                              //!     paste olayının tetiklendiği anda, yapıştırılan içeriğin henüz input alanına aktarılmamış olmasından dolayı, ilk yapıştırma işleminde içerik boş görünür. Bu sebeple setTimeout fonksiyonu çağırıldı.
         console.log(e.target.value);                                                //!     Yapıştırma işleminden sonra güncellenmiş değeri alır
     }, 0);                                                                          //!     Tarayıcının yapıştırmayı tamamlaması için sıfır zamanlı bir gecikme
@@ -70,7 +70,7 @@ function run4(e){
 
 todo.addEventListener("cut", run5);
 
-function run5(e){                                                                   //?     abcdefgh yazılıydı "gh" kesildiÇıktı = abcdef
+function run5(e) {                                                                   //?     abcdefgh yazılıydı "gh" kesildiÇıktı = abcdef
     console.log(e.target.value);
 }
 
@@ -80,10 +80,10 @@ function run5(e){                                                               
 //*                                           select
 //*--------------------------------------------------------------------------------------------------------------------------------------------
 
-//*     Mouse ile inputta bir yer seçip bıraktığında çalışır.
+//*     Mouse ile inputta bir yer seçip bıraktığında o alanda ne yazılıysa hepsini yakalar.
 todo.addEventListener("select", run6);
 
-function run6(e){                                                                   //?     abcdefgh yazılıyda biz de üzerinde "cde" harflerini seçtik ve bıraktığımızda o alanda hala abcdefgh olduğu için onlar console'a yazıldı.     
+function run6(e) {                                                                   //?     abcdefgh yazılıyda biz de üzerinde "cde" harflerini seçtik ve bıraktığımızda o alanda hala abcdefgh olduğu için onlar console'a yazıldı.     
     console.log(e.target.value);
 }
 

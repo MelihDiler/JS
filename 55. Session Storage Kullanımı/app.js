@@ -50,7 +50,7 @@ if (value !== null) {                                                    //TODO 
 
 //TODO-----------------------------------------------------------------------------------------------------------------------------------------
 //!--------------------------------------------------------------------------------------------------------------------------------------------
-//!                                            DEĞERLER STRING OLUR   
+//!                                            DEĞERLER STRING OLUR
 //!--------------------------------------------------------------------------------------------------------------------------------------------
 
 //!     Verdiğimiz değerler numerik bile olsa string olarak kaydolur ve string olarak döner.
@@ -68,25 +68,26 @@ console.log(value2 + " " + typeof value2);                               //!    
 //?                                       SESSION STORAGE ARRAY YAZDIRMA
 //?--------------------------------------------------------------------------------------------------------------------------------------------
 
-let names = ["Melih", "Ezgi", "Panduf", "Defne"];                        //?     Öncelikle bir Array oluşturduk.
+// let names = ["Melih", "Ezgi", "Panduf", "Defne"];                        //?     Öncelikle bir Array oluşturduk.
 
-sessionStorage.setItem("names", names);                                  //?     İlk parametre "key" ikinci parametre Array.
+// sessionStorage.setItem("names", names);                                  //?     İlk parametre key = "names" ikinci parametre value = "names" yani Array.
 
-let value3 = sessionStorage.getItem("names");                            //?     Key ismi ile çağırdık.
-console.log(value3 +" " + typeof value3);                                //?     Çıktı = Melih,Ezgi,Panduf,Defne string. Array verdik string döndü.
+// let value3 = sessionStorage.getItem("names");                            //?     Key ismi ile çağırdık.
+// console.log(value3 + " " + typeof value3);                               //?     Çıktı = Melih,Ezgi,Panduf,Defne string. Array verdik string döndü.
 
-//?     ÇÖZÜMÜ:
-//?------------
-
-
-// let names = ["Melih", "Ezgi", "Panduf", "Defne"];                     //?     Öncelikle bir Array oluşturduk.
-
-// sessionStorage.setItem("names", JSON.stringify(names));               //?     JSON.stringify ile Array olarak ekledik ve Applicationda [] içinde gözüküyor. Aslında JSON formatında bir string'e dönüştürerek gömdük.
-
-// let value3 = JSON.parse(sessionStorage.getItem("names"));             //?     Key ismi ile çağırdık. JSON.parse ile JSON formatına döndürerek Array olarak getirdik yoksa Array olsa bile getirirken string getirecekti.
-// console.log(value3 +" " + typeof value3);
+// //?     ÇÖZÜMÜ:
+// //?------------
 
 
+let names = ["Melih", "Ezgi", "Panduf", "Defne"];                     //?     Öncelikle bir Array oluşturduk.
+
+sessionStorage.setItem("names", JSON.stringify(names));               //?     JSON.stringify ile Array olarak ekledik ve Applicationda [] içinde gözüküyor. Aslında JSON formatında bir string'e dönüştürerek gömdük.
+
+let value3 = JSON.parse(sessionStorage.getItem("names"));             //?     Key ismi ile çağırdık. JSON.parse ile JSON formatına döndürerek Array olarak getirdik yoksa Array olsa bile getirirken string getirecekti.
+console.log(value3 + " " + typeof value3);
+
+//! JSON.stringify() bir JavaScript objesini JSON string'ine dönüştürür.
+//! JSON.parse() ise bir JSON string'ini JavaScript objesine dönüştürür
 //?--------------------------------------------------------------------------------------------------------------------------------------------
 
 

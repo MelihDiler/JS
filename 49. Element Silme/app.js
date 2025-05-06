@@ -1,5 +1,7 @@
 //                                    ---------- ELEMENT SILME ----------
 
+//  Yakaladigin todo silinmis olsa bile silinmis olani tutar. indeksteki silindikten sonra yerine geleni tutmaz.
+
 const todoList = document.querySelector(".list-group");           //*     Todo listi yakaladık.
 const todos = document.querySelectorAll(".list-group-item");      //*     Yukarıdaki grupta bulunan tüm itemleri(todoları) All ile yakaladık.
 const todo1 = document.querySelector(".list-group-item");         //*     Yukarıdaki o class isimlilerin hepsini getirir. Bu ilkini getirir. Yani Todo 1'i.

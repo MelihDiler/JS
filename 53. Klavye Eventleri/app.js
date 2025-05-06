@@ -7,7 +7,7 @@
 //?--------------------------------------------------------------------------------------------------------------------------------------------
 
 //?     Belirtilen yerde klavyede herhangi bir tuşa basılırsa çalışır. 
- 
+
 // document.addEventListener("keypress", run);                                      //?     document yerine window yazarsan iframe'lerde de çalışır.
 
 // function run(e) {
@@ -23,7 +23,7 @@
 //*                                          keydown
 //*--------------------------------------------------------------------------------------------------------------------------------------------
 
-//*     keypress'de sadece harf ve sayılarda çalışırken kydownda tüm tuşlarda çalışır.
+//*     keypress'de sadece harf ve sayılarda çalışırken keydownda tüm tuşlarda çalışır.
 
 // document.addEventListener("keydown", run2);                                      //*     document yerine window yazarsan iframe'lerde de çalışır.
 
@@ -69,13 +69,13 @@
 //?--------------------------------------------------------------------------------------------------------------------------------------------
 //?     Input kısmına girilen değerleri üzerindeki başlığa yazdırma               
 //?--------------------------------------------------------------------------------------------------------------------------------------------
- 
+
 const cardTitle = document.querySelectorAll(".card-title")[0];
 const input = document.querySelector("#todoName");                                  //?     input = Todo giriniz adlı değer alan çubuk.
 
-input.addEventListener("keyup", run5);                                              //?     input değişkenine evennt eekledik. bir tuşa basılırsa run5 fonksiyonu çalıştırılacak.
+input.addEventListener("keyup", run5);                                              //?     input değişkenine event ekledik. bir tuşa basılırsa run5 fonksiyonu çalıştırılacak.
 
-function run5(e){
+function run5(e) {
     cardTitle.textContent = e.target.value;                                         //?     target o anki çalışmış olduğu event etiketini verir. value ile de o html etiketindeki değeri almış oluruz.
 }
 

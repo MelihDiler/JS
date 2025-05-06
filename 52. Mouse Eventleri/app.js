@@ -130,7 +130,7 @@ const cardBody4 = document.querySelectorAll(".card-body")[0];                 //
 cardBody4.addEventListener("mouseleave", run8);
 
 function run8(e) {                                                            //!     grubun her grup üzerinden ayrıldığında 1 artar.
-    console.log(e.type);                                                      //!     Çıktı = mouseleave
+    console.log(e.type);                                                      //!     Çıktı = mouseleave 
 }
 
 
