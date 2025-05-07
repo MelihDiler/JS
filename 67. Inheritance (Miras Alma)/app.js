@@ -1,6 +1,6 @@
 //                                 ---------- INHERITANCE (MIRAS ALMA) ----------
 
-//      Person adındaki sınıfımızda firstName özelliği var. Başka sınıfları yazarken de onların içine firstName diye tekrardan değişken 
+//      Person adındaki sınıfımızda firstName özelliği var. Başka sınıfları yazarken de onların içine firstName diye tekrardan değişken
 //      yazmayacağız. Kod tekrarı yanlış bir programlama biçimidir. Bu sebeple miras almayı uygulayacağız
 
 //?--------------------------------------------------------------------------------------------------------------------------------------
@@ -28,6 +28,7 @@
 
 // const student1 = new Student();
 // student1.write();
+// console.log(student1.firstName);
 
 //?--------------------------------------------------------------------------------------------------------------------------------------
 //*--------------------------------------------------------------------------------------------------------------------------------------
@@ -65,51 +66,51 @@ student2.write2();                                                       //*    
 //TODO-----------------------------------------------------------------------------------------------------------------------------------
 
 //TODO  super() = miras almış olduğun sınıfın constructor'ını gösterir.
-//TODO  Person ile bir ana sınıf oluşturup student ve enginner sınıfları ortak özellikleri kod tekrarı yapmamık için Person'dan aldılar.
+//TODO  Person ile bir ana sınıf oluşturup student ve engineer sınıfları ortak özellikleri kod tekrarı yapmamak için Person'dan aldılar.
 
-// class Person {
+class Person {
 
-//     constructor(firstName, lastName, salary) {
-//         this.firstName = firstName;
-//         this.lastName = lastName;
-//         this.salary = salary;
-//     }
+    constructor(firstName, lastName, salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+    }
 
-//     writeInfo() {
-//         console.log(this.firstName, this.lastName, this.salary);
-//     }
+    writeInfo() {
+        console.log(this.firstName, this.lastName, this.salary);
+    }
 
-// }
-
-
-// class Student extends Person {
-
-//     constructor(firstName, lastName, salary) {
-//         super(firstName, lastName, salary);                              //TODO  super() = miras almış olduğun sınıfın constructor'ını gösterir. Student'taki firstName Person'daki firstName'e atmış olduk. 
-//     }
-
-//     writeInfo() {
-//         super.writeInfo();                                               //TODO  Çıktı = Melih Diler 65000  -->  super ile Person sınıfının writeInfo'sunu çalıştırdık.
-//     }
-// }
+}
 
 
-// class Engineer extends Person {
+class Student extends Person {
 
-//     constructor(firstName, lastName, salary) {
-//         super(firstName, lastName, salary);                              //TODO  super() = miras almış olduğun sınıfın constructor'ını gösterir. Student'taki firstName Person'daki firstName'e atmış olduk. 
-//     }
+    constructor(firstName, lastName, salary) {
+        super(firstName, lastName, salary);                              //TODO  super() = miras almış olduğun sınıfın constructor'ını gösterir. Student'taki firstName Person'daki firstName'e atmış olduk.
+    }
 
-//     writeInfo() {
-//         super.writeInfo();                                               //TODO  Çıktı = Ezgi Diler 65000  -->  super ile Person sınıfının writeInfo'sunu çalıştırdık.
-//     }
-// }
+    writeInfo() {
+        super.writeInfo();                                               //TODO  Çıktı = Melih Diler 65000  -->  super ile Person sınıfının writeInfo'sunu çalıştırdık.
+    }
+}
 
-// const student1 = new Student("Melih", "Diler", 65000);
-// student1.writeInfo();
 
-// const engineer1 = new Engineer("Ezgi", "Diler", 65000);
-// engineer1.writeInfo();
+class Engineer extends Person {
+
+    constructor(firstName, lastName, salary) {
+        super(firstName, lastName, salary);                              //TODO  super() = miras almış olduğun sınıfın constructor'ını gösterir. Student'taki firstName Person'daki firstName'e atmış olduk.
+    }
+
+    writeInfo() {
+        super.writeInfo();                                               //TODO  Çıktı = Ezgi Diler 65000  -->  super ile Person sınıfının writeInfo'sunu çalıştırdık.
+    }
+}
+
+const student1 = new Student("Melih", "Diler", 65000);
+student1.writeInfo();
+
+const engineer1 = new Engineer("Ezgi", "Diler", 65000);
+engineer1.writeInfo();
 
 //TODO-----------------------------------------------------------------------------------------------------------------------------------
 

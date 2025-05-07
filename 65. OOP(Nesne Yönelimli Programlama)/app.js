@@ -15,11 +15,11 @@
 //?--------------------------------------------------------------------------------------------------------------------------------------
 
 class Insan {                                                            //?     Sınıf
-                                                                         //?     Burada bir değişken tanımlarken let veya const ile yapamazsın. Direkt değişken adıyla yazarsın. Arkada otomatik başına this. koyar fakat constructor'da this yazmak zorundasın.
-    
-    constructor(firstName, lastName, age, salary) {                      //?     Yapıcı metot
+    //?     Burada bir değişken tanımlarken let veya const ile yapamazsın. Direkt değişken adıyla yazarsın. Arkada otomatik başına this. koyar fakat constructor'da this yazmak zorundasın.
+
+    constructor(firstName, lastName, age, salary) {                      //?     Yapıcı metot. Nesne olusturdugumuzda o nesneye ait degiskenlere ulasmak icin this. ile constructor'da atama yapiyoruz.
         this.isim = firstName;                                           //?     Parametreden gelen değeri "this" ile bu sınıfta yap diyerek "isim" adında özellik ekliyoruz.
-        this.soyisim = lastName;                                         //?     Dinamik değer alması için değişkeni "this."" ile constructor içinde tanımladık.
+        this.soyisim = lastName;                                         //?     Dinamik değer alması için değişkeni "this." ile constructor içinde tanımladık.
         this.yas = age;
         this.maas = salary;
     }

@@ -53,7 +53,7 @@ class Insan {
 const insan1 = new Insan("Melih", "Diler", 65000);
 insan1.writeInfo();                                                      //?     Çıktı = Melih Diler 65000 undefined  --> sondaki tanımsız yazısının sebebi: languagesCount static tanımlandı ve nesne ile erişmeye çaıştığımız için erişemedik.
 
-console.log(Insan.languagesCount);                                       //?     Çıktı = 10
+console.log(Insan.languagesCount);                                       //?     Çıktı = 10 
 
 
 //*--------------------------------------------------------------------------------------------------------------------------------------
