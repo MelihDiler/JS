@@ -13,5 +13,5 @@ class Kisi {
 
 const ali = new Kisi("Ali");
 
-console.log(ali.getIsim());  // ✅ Ali
-//*  console.log(ali.#isim);      // ❌ SyntaxError: Private field
+console.log(ali.getIsim());  //* ✅ Ali
+//*  console.log(ali.#isim); //* ❌ SyntaxError: Private field
